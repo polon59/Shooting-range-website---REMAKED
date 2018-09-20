@@ -1,0 +1,60 @@
+
+/* VERTICAL NAVIGATION BAR */
+
+#navbar{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+    background-image: url("");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.stickyHor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.navbarRow{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 1px;
+    height: 100%;
+    
+}
+
+.navbarBox{
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.navbarBox p{
+    margin-top: 0.7vw;
+    vertical-align: middle;
+}
+
+
+/* HOTIZONTAL NAVBAR */
+
+#navbarVer{
+    position: fixed;
+    height: 100%;
+    background-color: grey;
+    z-index: 0;
+    width: 12%;
+}
+
+.stickyVer {
+    position: fixed;
+    top: 0;
+    /* width: 15%; */
+}
