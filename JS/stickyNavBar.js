@@ -8,9 +8,9 @@ function stickNavbar() {
 
   if (window.pageYOffset >= stickyHOR) {
     navbarHor.classList.add("stickyHor");
-    navbarHorContent.style.padding = "1vw";
+    navbarHorContent.style.padding = "0vw";
   } else {
     navbarHor.classList.remove("stickyHor");
-    navbarHorContent.style.padding = "3vw";
+    navbarHorContent.style.padding = "2vw";
   }
 }
