@@ -1,5 +1,5 @@
 body{
-    background-image: url("../resources/backgrounds/background.jpg");
+    background-color: black;
 }
 
 a{
@@ -12,16 +12,25 @@ p{
     color: white;
 }
 
+/* LOGO SECTION */
+#logoSection img{
+    display: block;
+    max-height: 300px;
+    width: 100%;
+    margin-left: 14%;
+}
+
 
 /* HORIZONTAL NAVIGATION BAR */
 #navbarHor{
     width: 100%;
-    margin: 0;
+    margin-left: 0;
     padding: 0;
     text-align: center;
     top: 0;
     z-index: 1;
-    background-color: rgb(73, 73, 73);
+    background-image: url("../resources/backgrounds/menuBackground.jpg");
+    box-shadow: inset 0px 50px 45px -7px rgb(0, 0, 0);
 }
 
 .stickyHor {
@@ -50,15 +59,11 @@ p{
     padding: 1vw;
 }
 
-/* #navbarHor li p{
-    color: white;
-} */
-
-
 /* VERTICAL NAVBAR */
 
 #navbarVer{
-    background-color: rgb(73, 73, 73);
+    /* background-color: rgb(73, 73, 73); */
+    background-image: url("../resources/backgrounds/menuBackground.jpg");
     height: 100%;
     width: 15%;
     position: fixed;
