@@ -9,6 +9,7 @@ a{
 
 p{
     margin: 0;
+    color: white;
 }
 
 
@@ -41,6 +42,18 @@ p{
     overflow: hidden;
 }
 
+#navbarHor li :hover{
+    background-color: rgb(0, 0, 0);
+}
+
+#navbarHor p{
+    padding: 1vw;
+}
+
+/* #navbarHor li p{
+    color: white;
+} */
+
 
 /* VERTICAL NAVBAR */
 
@@ -72,7 +85,6 @@ p{
 }
 
 #navbarVer p{
-    color: white;
     padding:0.5vw;
 }
 
