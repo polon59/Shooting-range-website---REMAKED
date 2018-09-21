@@ -12,12 +12,21 @@ p{
     color: white;
 }
 
+.content{
+    margin-left: 14%;
+}
+
+h3{
+    color: white;
+}
+
 /* LOGO SECTION */
+
 #logoSection img{
     display: block;
     max-height: 300px;
     width: 100%;
-    margin-left: 14%;
+    
 }
 
 #navbarVerLogo img{
@@ -98,3 +107,15 @@ p{
     padding:0.5vw;
 }
 
+
+/* BOXES */
+
+.box{
+    margin: 4vw;
+    padding: 2vw;
+    border: 0.1vw solid rgb(14, 14, 14);
+    background-image: url("../resources/backgrounds/boxBackground.jpg");
+    -webkit-box-shadow: inset 0px 0px 167px 55px rgb(0, 0, 0);
+    -moz-box-shadow: inset 0px 0px 167px 55px rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 185px 107px rgb(0, 0, 0);
+}
