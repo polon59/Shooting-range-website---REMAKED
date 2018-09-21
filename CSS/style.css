@@ -20,6 +20,11 @@ p{
     margin-left: 14%;
 }
 
+#navbarVerLogo img{
+    width: 100%;
+    height: auto;
+}
+
 
 /* HORIZONTAL NAVIGATION BAR */
 #navbarHor{
