@@ -1,22 +1,16 @@
 window.onscroll = function() {stickNavbar()};
 
 var navbarHor = document.getElementById("navbarHor");
-var navbarVer = document.getElementById("navbarVer");
-var stickyVER = navbarVer.offsetTop;
+var navbarHorContent = document.getElementById("navbarHorCont");
 var stickyHOR = navbarHor.offsetTop;
 
 function stickNavbar() {
-  // if (window.pageYOffset >= stickyVER-85) {
-  //   navbarVer.classList.add("stickyVer");
-  // } else {
-  //   navbarVer.classList.remove("stickyVer");
-  // }
 
   if (window.pageYOffset >= stickyHOR) {
     navbarHor.classList.add("stickyHor");
-    // navbarVer.classList.add("stickyVer");
+    navbarHorContent.style.padding = "1vw";
   } else {
     navbarHor.classList.remove("stickyHor");
-    // navbarVer.classList.remove("stickyVer");
+    navbarHorContent.style.padding = "3vw";
   }
 }
