@@ -115,7 +115,5 @@ h3{
     padding: 2vw;
     border: 0.1vw solid rgb(14, 14, 14);
     background-image: url("../resources/backgrounds/boxBackground.jpg");
-    -webkit-box-shadow: inset 0px 0px 167px 55px rgb(0, 0, 0);
-    -moz-box-shadow: inset 0px 0px 167px 55px rgb(0, 0, 0);
     box-shadow: inset 0px 0px 185px 107px rgb(0, 0, 0);
 }
