@@ -117,7 +117,7 @@ h3{
 .box{
     margin: 4vw;
     padding: 2vw;
-    border: 0.1vw solid rgb(14, 14, 14);
+    /* border: 0.1vw solid rgb(14, 14, 14); */
     background-image: url("../resources/backgrounds/boxBackground.jpg");
     box-shadow: inset 0px 0px 185px 107px rgb(0, 0, 0);
     overflow: auto;
