@@ -120,13 +120,32 @@ h3{
     /* border: 0.1vw solid rgb(14, 14, 14); */
     background-image: url("../resources/backgrounds/boxBackground.jpg");
     box-shadow: inset 0px 0px 185px 107px rgb(0, 0, 0);
-    overflow: auto;
+    /* overflow: auto; */
 }
 
-.box img{
+.boxImage{
     float: right;
     padding: 1vw;
     max-width: 300px;
     max-height: 190px;
     border: 0.1vw solid rgb(14, 14, 14);
+}
+
+/* NEWS GALLERY */
+
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 31%;
+}
+
+.eventImage{
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
 }
