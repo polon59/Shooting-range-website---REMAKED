@@ -1,63 +1,184 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Shooting range - Home</title>
+<link rel="icon" href="resources/icons/pageIcon.png">
+<link rel="stylesheet" href="CSS/planVisit.css">
+<link rel="stylesheet" href="CSS/style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+    <section class="content" id="logoSection">
+        <img src="resources/backgrounds/logo.jpg" alt="">
+    </section>
+
+
+    <section id="navbarHor">
+            <ul id="navbarHorCont">
+                <li> <a href=""> <p>HOME</p></li>
+                <li> <a href=""><p>About us</p></a></li>
+                <li> <a href=""><p>Our arsenal</p></a></li>
+                <li> <a href="planVisit.html"><p>Plan Your visit</p></a></li>
+                <li> <a href=""><p>Contact</p></a></li>
+            </ul>
+    </section>
+
+    <section id="navbarVer">
+
+        <div id="navbarVerLogo">
+            <img src="resources/icons/navbarVerLogo.png" alt="">
+        </div>
+        
+        <ul>
+            <li> <a href=""> <p>Welcome</p></li>
+            <li> <a href=""><p>About us</p></a></li>
+            <li> <a href=""><p>Why to choose us?</p></a></li>
+            <li> <a href=""><p>Current events</p></a></li>
+        </ul>
+    </section>
+
+
+
+    <section class="content">
+        <div class="switchable" id="people">
+                <table>
+                        <tr>
+                            <th>no.</th>
+                            <th>Weapon</th>
+                            <th>Ammunition</th>
+                            <th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>
+                                <img class="weaponImage" src="resources/images/weaponImages/ak47.png" alt="">
+                            </td>
+                            <td>5.45mm</td>
+                            <td>5$</td>
+                            <td><button onclick="changeShotsNumber('ak47','add')">+</button></td>
+                            <td><button onclick="changeShotsNumber('ak47','subtract')">-</button></td>
+                            <td id="ak47ShotsNumber">-</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Makarov</td>
+                            <td>7.62mm</td>
+                            <td>3$</td>
+                            <td><button onclick="changeShotsNumber('makarov','add')">+</button></td>
+                            <td><button onclick="changeShotsNumber('makarov','subtract')">-</button></td>
+                            <td id="makarovShotsNumber">-</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Beretta m92</td>
+                            <td>9mm</td>
+                            <td>2$</td>
+                            <td><button onclick="changeShotsNumber('beretta','add')">+</button></td>
+                            <td><button onclick="changeShotsNumber('beretta','subtract')">-</button></td>
+                            <td id="berettaShotsNumber">-</td>
+                        </tr>
+                    </table>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <button onclick="calculate()">calculate</button>
+                    <p id="sum"></p>
+            <button onclick="nextDiv()">NEXT</button>
+        </div>
+
+        <div class="box switchable" id="instructors">
+            <p> dsadfdfsdfsdfdsfsdffds INSTRUCTORS</p>
+            <button onclick="previousDiv()">BACK</button>
+            <button onclick="nextDiv()">NEXT</button>
+        </div>
+
+
+        <div class="box switchable" id="weapons">
+            <table style="border:1px solid black">
+                <tr>
+                    <th>no.</th>
+                    <th>Weapon</th>
+                    <th>Ammunition</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>AK-47</td>
+                    <td>5.45mm</td>
+                    <td>5$</td>
+                    <td><button onclick="changeShotsNumber('ak47','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('ak47','subtract')">-</button></td>
+                    <td id="ak47ShotsNumber">-</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Makarov</td>
+                    <td>7.62mm</td>
+                    <td>3$</td>
+                    <td><button onclick="changeShotsNumber('makarov','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('makarov','subtract')">-</button></td>
+                    <td id="makarovShotsNumber">-</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Beretta m92</td>
+                    <td>9mm</td>
+                    <td>2$</td>
+                    <td><button onclick="changeShotsNumber('beretta','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('beretta','subtract')">-</button></td>
+                    <td id="berettaShotsNumber">-</td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br><br><br><br><br>
+            <button onclick="calculate()">calculate</button>
+            <p id="sum"></p>
+            <button onclick="previousDiv()">BACK</button>
+        </div>
+    </section>
+
+    
+<footer>
+</footer>
+
+<script src="JS/stickyNavBar.js"></script>
+
+</body>
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
 </head>
 <body>
 
-<div class="switchable" id="people">
-    <p> dsadfdfsdfsdfdsfsdffds PEOPLE</p>
-    <button onclick="nextDiv()">NEXT</button>
-</div>
 
-<div class="switchable" id="instructors">
-    <p> dsadfdfsdfsdfdsfsdffds INSTRUCTORS</p>
-    <button onclick="previousDiv()">BACK</button>
-    <button onclick="nextDiv()">NEXT</button>
-</div>
-
-
-<div class="switchable" id="weapons">
-    <table style="border:1px solid black">
-        <tr>
-            <th>no.</th>
-            <th>Weapon</th>
-            <th>Ammunition</th>
-            <th>Cost</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>AK-47</td>
-            <td>5.45mm</td>
-            <td>5$</td>
-            <td><button onclick="changeShotsNumber('ak47','add')">+</button></td>
-            <td><button onclick="changeShotsNumber('ak47','subtract')">-</button></td>
-            <td id="ak47ShotsNumber">-</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Makarov</td>
-            <td>7.62mm</td>
-            <td>3$</td>
-            <td><button onclick="changeShotsNumber('makarov','add')">+</button></td>
-            <td><button onclick="changeShotsNumber('makarov','subtract')">-</button></td>
-            <td id="makarovShotsNumber">-</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Beretta m92</td>
-            <td>9mm</td>
-            <td>2$</td>
-            <td><button onclick="changeShotsNumber('beretta','add')">+</button></td>
-            <td><button onclick="changeShotsNumber('beretta','subtract')">-</button></td>
-            <td id="berettaShotsNumber">-</td>
-        </tr>
-    </table>
-
-    <button onclick="calculate()">calculate</button>
-    <p id="sum"></p>
-    <button onclick="previousDiv()">BACK</button>
-
-</div>
 
     
 

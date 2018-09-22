@@ -1,0 +1,17 @@
+th{
+    color: white;
+    text-align: center;
+}
+
+tr{
+    color: white;
+    text-align: center;
+}
+
+.switchable{
+    margin: 4vw;
+}
+
+.weaponImage{
+    width: 15vw;
+}
