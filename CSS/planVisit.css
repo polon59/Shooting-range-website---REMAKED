@@ -13,6 +13,10 @@ td{
     padding-right: 2vw;
 }
 
+td button{
+    /* background-color: black; */
+}
+
 .switchable{
     margin: 4vw;
 }

@@ -6,42 +6,50 @@ createAmmoAmmountDict();
 
 function createAmmoAmmountDict() {
     for (var i = 0; i<weaponNames.length; i++){
-        var weapon = {name: weaponNames[i][0], cost: weaponNames[i][1], shots: 0};
+        var weapon = {name: weaponNames[i][0], cost: weaponNames[i][1], shots: 0, allShotsCost:0};
         ammoAmmount.push(weapon);
     }
 }
 
 function changeShotsNumber(weaponName, action) {
-    var elementID = weaponName + "ShotsNumber";
+    
     var numberOfWeaponShots;
+    var allShotsCost;
 
     ammoAmmount.forEach(weapon => {
         if (weapon.name == weaponName) {
 
             if (action == "add") {
                 weapon.shots ++;
+                weapon.allShotsCost += weapon.cost;
             }
             else{
                 if (weapon.shots > 0) {
                     weapon.shots--;
+                    weapon.allShotsCost -= weapon.cost;
                 }
             } 
             numberOfWeaponShots = weapon.shots;
+            allShotsCost = weapon.allShotsCost;
         }   
-        displayCurrentShotsNumber(numberOfWeaponShots,elementID);
+        displayCurrentNumberAndCost(numberOfWeaponShots,allShotsCost,weaponName);
     });
 
 
     
 
-function displayCurrentShotsNumber(numberOfWeaponShots,elementID) {
+function displayCurrentNumberAndCost(numberOfWeaponShots,allShotsCost,weaponName) {
     var word;
+    var weaponShotsBoxID = weaponName + "ShotsNumber";
+    var weaponCostBoxID = weaponName + "Cost";
+
     if (numberOfWeaponShots === 1) {
         word = " shot";
     } else {
         word = " shots";
     }
-    document.getElementById(elementID).innerHTML = numberOfWeaponShots + word;
+    document.getElementById(weaponShotsBoxID).innerHTML = numberOfWeaponShots + word;
+    document.getElementById(weaponCostBoxID).innerHTML = allShotsCost + "$";
 }
 }
 
