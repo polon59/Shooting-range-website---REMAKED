@@ -1,4 +1,6 @@
-var weaponNames = [["ak74",3],["ak47",5],["ppsz",2],["thompson",2.5],["g3",2],["glauberyt",1],["rpk",4],["rak",2],["pkm",1.5]];
+var weaponNames = [["ak74",3,"C"],["ak47",5,"C"],["ppsz",2,"C"],["thompson",2.5,"C"],["g3",2,"C"],
+["glauberyt",1,"C"],["rpk",4,"C"],["rak",2,"C"],["pkm",1.5,"C"],["cz97",3,"P"],["taurus96",2,"P"],
+["waltherp1",1,"P"],["xdm9",1,"P"],["ruger44magnum",1,"P"],["colt1911",1,"P"],["smith44long",6,"P"]];
 var ammoAmmount = []; 
 var sum;
 createAmmoAmmountDict();

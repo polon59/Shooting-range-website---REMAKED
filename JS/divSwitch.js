@@ -10,23 +10,31 @@ function showPopup() {
     popupWindow.style.visibility="visible";
 }
 
+
 function hidePopup() {
     popupWindow.style.visibility="hidden";
 }
 
+
 function setButtons(params) {
+    setPrevBtn();
+    setNextBtn();
+}
+
+
+function setPrevBtn() {
     if (currentIndex == 0) {
         prevButton.disabled = true;
-    } else {
-        prevButton.disabled = false;
-    }
+    } else {prevButton.disabled = false;}
+}
 
+
+function setNextBtn(){
     if (currentIndex == 2) {
         nextButton.disabled = true;
-    } else {
-        nextButton.disabled = false;
-    }
+    } else {nextButton.disabled = false;}
 }
+
 
 function displayProperDiv() {
     setButtons();
@@ -34,16 +42,16 @@ function displayProperDiv() {
         if (i === currentIndex){
             switchableDivs[i].style.display="block";
         }
-        else{
-            switchableDivs[i].style.display="none";
-        }   
+        else{switchableDivs[i].style.display="none";}   
     }
 }
+
 
 function nextDiv() {
     currentIndex ++;
     displayProperDiv();
 }
+
 
 function previousDiv() {
     currentIndex --;

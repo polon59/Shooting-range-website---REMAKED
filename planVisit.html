@@ -217,14 +217,100 @@
                     <td id="pkmCost">-</td>
                 </tr>
             </table>
+
             <br>
             <button onclick="calculate()">calculate</button>
             <p id="sum"></p>
+
         </div>
 
 
-        <div class="box switchable" id="instructors">
-            <p> dsadfdfsdfsdfdsfsdffds INSTRUCTORS</p>      
+        <div class="switchable" id="instructors">
+            <h1>Pistols:</h1>
+            <table>
+                <tr>
+                    <th>Weapon</th>
+                    <th>Ammunition</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/taurus96.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>2$</td>
+                    <td><button onclick="changeShotsNumber('taurus96','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('taurus96','subtract')">-</button></td>
+                    <td id="taurus96ShotsNumber">-</td>
+                    <td id="taurus96Cost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/cz97.png" alt="">
+                    </td>
+                    <td>5.45mm</td>
+                    <td>3$</td>
+                    <td><button onclick="changeShotsNumber('cz97','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('cz97','subtract')">-</button></td>
+                    <td id="cz97ShotsNumber">-</td>
+                    <td id="cz97Cost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                    <img class="weaponImage" src="resources/images/weaponImages/waltherp1.png" alt="">
+                    </td>
+                    <td>9mm</td>
+                    <td>1$</td>
+                    <td><button onclick="changeShotsNumber('waltherp1','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('waltherp1','subtract')">-</button></td>
+                    <td id="waltherp1ShotsNumber">-</td>
+                    <td id="waltherp1Cost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/xdm9.png" alt="">
+                    </td>
+                    <td>9mm</td>
+                    <td>1$</td>
+                    <td><button onclick="changeShotsNumber('xdm9','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('xdm9','subtract')">-</button></td>
+                    <td id="xdm9ShotsNumber">-</td>
+                    <td id="xdm9Cost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/ruger44magnum.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>1$</td>
+                    <td><button onclick="changeShotsNumber('ruger44magnum','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('ruger44magnum','subtract')">-</button></td>
+                    <td id="ruger44magnumShotsNumber">-</td>
+                    <td id="ruger44magnumCost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/colt1911.png" alt="">
+                    </td>
+                    <td>.45'</td>
+                    <td>1$</td>
+                    <td><button onclick="changeShotsNumber('colt1911','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('colt1911','subtract')">-</button></td>
+                    <td id="colt1911ShotsNumber">-</td>
+                    <td id="colt1911Cost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/smith44long.png" alt="">
+                    </td>
+                    <td>.55'</td>
+                    <td>6$</td>
+                    <td><button onclick="changeShotsNumber('smith44long','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('smith44long','subtract')">-</button></td>
+                    <td id="smith44longShotsNumber">-</td>
+                    <td id="smith44longCost">-</td>
+                </tr>
+            </table>    
         </div>
 
 
