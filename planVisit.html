@@ -45,115 +45,116 @@
 
     <section class="content">
         <div class="switchable" id="people">
-                <table>
-                        <tr>
-                            <th>Weapon</th>
-                            <th>Ammunition</th>
-                            <th>Cost</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/ak47.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>5$</td>
-                            <td><button onclick="changeShotsNumber('ak47','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('ak47','subtract')">-</button></td>
-                            <td id="ak47ShotsNumber">-</td>
-                            <td id="ak47Cost">-</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/ak74.png" alt="">
-                            </td>
-                            <td>5.45mm</td>
-                            <td>3$</td>
-                            <td><button onclick="changeShotsNumber('ak74','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('ak74','subtract')">-</button></td>
-                            <td id="ak74ShotsNumber">-</td>
-                            <td id="ak74Cost">-</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/ppsz.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>2$</td>
-                            <td><button onclick="changeShotsNumber('ppsz','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('ppsz','subtract')">-</button></td>
-                            <td id="ppszShotsNumber">-</td>
-                            <td id="ppszCost">-</td>
-                        </tr>
-                         <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/tommy.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>2.5$</td>
-                            <td><button onclick="changeShotsNumber('thompson','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('thompson','subtract')">-</button></td>
-                            <td id="thompsonShotsNumber">-</td>
-                            <td id="thompsonCost">-</td>
-                        </tr>
-                         <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/g3.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>2$</td>
-                            <td><button onclick="changeShotsNumber('g3','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('g3','subtract')">-</button></td>
-                            <td id="g3ShotsNumber">-</td>
-                            <td id="g3Cost">-</td>
-                        </tr>
-                         <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/glauberyt.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>1$</td>
-                            <td><button onclick="changeShotsNumber('glauberyt','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('glauberyt','subtract')">-</button></td>
-                            <td id="glauberytShotsNumber">-</td>
-                            <td id="glauberytCost">-</td>
-                        </tr>
-                         <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/rpk.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>4$</td>
-                            <td><button onclick="changeShotsNumber('rpk','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('rpk','subtract')">-</button></td>
-                            <td id="rpkShotsNumber">-</td>
-                            <td id="rpkCost">-</td>
-                        </tr>
-                         <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/rak.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>2$</td>
-                            <td><button onclick="changeShotsNumber('rak','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('rak','subtract')">-</button></td>
-                            <td id="rakShotsNumber">-</td>
-                            <td id="rakCost">-</td>
-                        </tr>
-                         <tr>
-                            <td>
-                                <img class="weaponImage" src="resources/images/weaponImages/pkm.png" alt="">
-                            </td>
-                            <td>7.62mm</td>
-                            <td>1.5$</td>
-                            <td><button onclick="changeShotsNumber('pkm','add')">+</button></td>
-                            <td><button onclick="changeShotsNumber('pkm','subtract')">-</button></td>
-                            <td id="pkmShotsNumber">-</td>
-                            <td id="pkmCost">-</td>
-                        </tr>
-                    </table>
-                    <br><br><br><br><br><br><br><br><br><br>
-                    <button onclick="calculate()">calculate</button>
-                    <p id="sum"></p>
+            <h1>Automatic weapons:</h1>
+            <table>
+                <tr>
+                    <th>Weapon</th>
+                    <th>Ammunition</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/ak47.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>5$</td>
+                    <td><button onclick="changeShotsNumber('ak47','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('ak47','subtract')">-</button></td>
+                    <td id="ak47ShotsNumber">-</td>
+                    <td id="ak47Cost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/ak74.png" alt="">
+                    </td>
+                    <td>5.45mm</td>
+                    <td>3$</td>
+                    <td><button onclick="changeShotsNumber('ak74','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('ak74','subtract')">-</button></td>
+                    <td id="ak74ShotsNumber">-</td>
+                    <td id="ak74Cost">-</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/ppsz.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>2$</td>
+                    <td><button onclick="changeShotsNumber('ppsz','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('ppsz','subtract')">-</button></td>
+                    <td id="ppszShotsNumber">-</td>
+                    <td id="ppszCost">-</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/tommy.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>2.5$</td>
+                    <td><button onclick="changeShotsNumber('thompson','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('thompson','subtract')">-</button></td>
+                    <td id="thompsonShotsNumber">-</td>
+                    <td id="thompsonCost">-</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/g3.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>2$</td>
+                    <td><button onclick="changeShotsNumber('g3','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('g3','subtract')">-</button></td>
+                    <td id="g3ShotsNumber">-</td>
+                    <td id="g3Cost">-</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/glauberyt.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>1$</td>
+                    <td><button onclick="changeShotsNumber('glauberyt','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('glauberyt','subtract')">-</button></td>
+                    <td id="glauberytShotsNumber">-</td>
+                    <td id="glauberytCost">-</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/rpk.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>4$</td>
+                    <td><button onclick="changeShotsNumber('rpk','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('rpk','subtract')">-</button></td>
+                    <td id="rpkShotsNumber">-</td>
+                    <td id="rpkCost">-</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/rak.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>2$</td>
+                    <td><button onclick="changeShotsNumber('rak','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('rak','subtract')">-</button></td>
+                    <td id="rakShotsNumber">-</td>
+                    <td id="rakCost">-</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <img class="weaponImage" src="resources/images/weaponImages/pkm.png" alt="">
+                    </td>
+                    <td>7.62mm</td>
+                    <td>1.5$</td>
+                    <td><button onclick="changeShotsNumber('pkm','add')">+</button></td>
+                    <td><button onclick="changeShotsNumber('pkm','subtract')">-</button></td>
+                    <td id="pkmShotsNumber">-</td>
+                    <td id="pkmCost">-</td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br><br><br><br><br>
+            <button onclick="calculate()">calculate</button>
+            <p id="sum"></p>
             <button onclick="nextDiv()">NEXT</button>
         </div>
 

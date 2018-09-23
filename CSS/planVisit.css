@@ -13,12 +13,17 @@ td{
     padding-right: 2vw;
 }
 
+table{
+    width: 50%; margin: auto;
+}
+
 td button{
     /* background-color: black; */
 }
 
 .switchable{
     margin: 4vw;
+    /* text-align: center; */
 }
 
 .weaponImage{
