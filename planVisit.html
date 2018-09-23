@@ -44,11 +44,13 @@
 
 
     <section class="content">
-        <button onclick="showHidePopup()">START</button>
+        <button onclick="showPopup()">START</button>
     </section>
 
 
-    <div id="popup">
+    <section id="popup">
+        <button id="exitButton" onclick="hidePopup()">X</button>
+
         <div class="switchable" id="people">
             <h1>Automatic weapons:</h1>
             <table>
@@ -211,7 +213,7 @@
             <p id="sum"></p>
             <button onclick="previousDiv()">BACK</button>
         </div>
-    </div>
+    </section>
 
 
     

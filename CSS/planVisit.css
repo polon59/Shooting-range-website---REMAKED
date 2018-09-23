@@ -32,8 +32,9 @@ td button{
 }
 
 #popup{
+    visibility: hidden;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.87);
+    background-color: rgba(0, 0, 0, 0.925);
     bottom: 0;
     cursor: default;
     left: 0;
@@ -41,13 +42,20 @@ td button{
     position: fixed;
     right: 0;
     top: 0;
-    visibility: hidden;
+    opacity: 3;
     z-index: 1;
     -webkit-transition: opacity .5s;
     -moz-transition: opacity .5s;
     -ms-transition: opacity .5s;
     -o-transition: opacity .5s;
     transition: opacity .5s;
+}
+
+#exitButton{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5vw;
 }
 
 .weaponImage{

@@ -4,11 +4,12 @@ var currentIndex = 0;
 displayProperDiv();
 
 
-function showHidePopup() {
+function showPopup() {
     popupWindow.style.visibility="visible";
-    // } else {
-    //     popupWindow.style.display="hidden"
-    // }
+}
+
+function hidePopup() {
+    popupWindow.style.visibility="hidden";
 }
 
 function displayProperDiv() {
