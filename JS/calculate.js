@@ -78,6 +78,7 @@ function displayCurrentNumberAndCost(numberOfWeaponShots,allShotsCost,weaponName
     document.getElementById(weaponShotsBoxID).innerHTML = numberOfWeaponShots + word;
     document.getElementById(weaponCostBoxID).innerHTML = allShotsCost + "$";
     document.getElementById("sum").innerHTML = "total: " + sum + " $";
+    document.getElementById("summary").innerHTML = sum + " $";
     document.getElementById("pistolsShots").innerHTML = pistolShots + " shots";
     document.getElementById("pistolsCost").innerHTML = pistolsCost + " $";
     document.getElementById("carabinesShots").innerHTML = carabinesShots + " shots";
