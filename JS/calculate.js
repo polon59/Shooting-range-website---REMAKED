@@ -2,7 +2,7 @@ var weaponNames = [["ak74",3,"C"],["ak47",5,"C"],["ppsz",2,"C"],["thompson",2.5,
 ["glauberyt",1,"C"],["rpk",4,"C"],["rak",2,"C"],["pkm",1.5,"C"],["cz97",3,"P"],["taurus96",2,"P"],
 ["waltherp1",1,"P"],["xdm9",1,"P"],["ruger44magnum",1,"P"],["colt1911",1,"P"],["smith44long",6,"P"]];
 var ammoAmmount = []; 
-var sum;
+var sum = 0;
 createAmmoAmmountDict();
 
 
@@ -24,11 +24,13 @@ function changeShotsNumber(weaponName, action) {
             if (action == "add") {
                 weapon.shots ++;
                 weapon.allShotsCost += weapon.cost;
+                sum += weapon.cost;
             }
             else{
                 if (weapon.shots > 0) {
                     weapon.shots--;
                     weapon.allShotsCost -= weapon.cost;
+                    sum -= weapon.cost;
                 }
             } 
             numberOfWeaponShots = weapon.shots;
@@ -52,6 +54,7 @@ function displayCurrentNumberAndCost(numberOfWeaponShots,allShotsCost,weaponName
     }
     document.getElementById(weaponShotsBoxID).innerHTML = numberOfWeaponShots + word;
     document.getElementById(weaponCostBoxID).innerHTML = allShotsCost + "$";
+    document.getElementById("sum").innerHTML = "total: " + sum + " $";
 }
 }
 
