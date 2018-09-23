@@ -1,5 +1,4 @@
-var makarov, ak47 = 0;
-var weaponNames = [["makarov", 3], ["ak47",5], ["beretta",2]];
+var weaponNames = [["ak74", 3], ["ak47",5], ["ppsz",2]];
 var ammoAmmount = []; 
 var sum;
 createAmmoAmmountDict();
