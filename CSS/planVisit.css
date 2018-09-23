@@ -56,6 +56,12 @@ td button{
     top: 0;
     right: 0;
     margin: 5vw;
+    box-shadow: inset 0px 0px 12px 8px rgb(0, 0, 0);
+    border: none;
+    width: 5vw;
+    height: 4vw;
+    min-width: 40px;
+    min-height: 35px;
 }
 
 .weaponImage{
