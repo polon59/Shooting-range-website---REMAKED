@@ -20,6 +20,12 @@ function setButtons(params) {
     } else {
         prevButton.disabled = false;
     }
+
+    if (currentIndex == 2) {
+        nextButton.disabled = true;
+    } else {
+        nextButton.disabled = false;
+    }
 }
 
 function displayProperDiv() {
