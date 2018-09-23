@@ -8,6 +8,11 @@ tr{
     text-align: center;
 }
 
+td{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
 .switchable{
     margin: 4vw;
 }

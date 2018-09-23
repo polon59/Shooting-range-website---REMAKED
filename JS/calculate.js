@@ -28,8 +28,21 @@ function changeShotsNumber(weaponName, action) {
             } 
             numberOfWeaponShots = weapon.shots;
         }   
+        displayCurrentShotsNumber(numberOfWeaponShots,elementID);
     });
-    document.getElementById(elementID).innerHTML = numberOfWeaponShots;
+
+
+    
+
+function displayCurrentShotsNumber(numberOfWeaponShots,elementID) {
+    var word;
+    if (numberOfWeaponShots === 1) {
+        word = " shot";
+    } else {
+        word = " shots";
+    }
+    document.getElementById(elementID).innerHTML = numberOfWeaponShots + word;
+}
 }
 
 
