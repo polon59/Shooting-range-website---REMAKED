@@ -3,18 +3,21 @@ var weaponNames = [["ak74",3,"C"],["ak47",5,"C"],["ppsz",2,"C"],["thompson",2.5,
 ["waltherp1",1,"P"],["xdm9",1,"P"],["ruger44magnum",1,"P"],["colt1911",1,"P"],["smith44long",6,"P"]];
 var ammoAmmount = []; 
 var sum = 0;
+var pistolsCost = 0;
+var pistolShots = 0;
+var carabinesCost = 0;
+var carabinesShots = 0;
 createAmmoAmmountDict();
 
 
 function createAmmoAmmountDict() {
     for (var i = 0; i<weaponNames.length; i++){
-        var weapon = {name: weaponNames[i][0], cost: weaponNames[i][1], shots: 0, allShotsCost:0};
+        var weapon = {name:weaponNames[i][0], cost:weaponNames[i][1], category:weaponNames[i][2], shots:0, allShotsCost:0};
         ammoAmmount.push(weapon);
     }
 }
 
 function changeShotsNumber(weaponName, action) {
-    
     var numberOfWeaponShots;
     var allShotsCost;
 
@@ -25,12 +28,14 @@ function changeShotsNumber(weaponName, action) {
                 weapon.shots ++;
                 weapon.allShotsCost += weapon.cost;
                 sum += weapon.cost;
+                addCateroryCost(weapon);
             }
             else{
                 if (weapon.shots > 0) {
                     weapon.shots--;
                     weapon.allShotsCost -= weapon.cost;
                     sum -= weapon.cost;
+                    subtractCateroryCost(weapon);
                 }
             } 
             numberOfWeaponShots = weapon.shots;
@@ -40,31 +45,45 @@ function changeShotsNumber(weaponName, action) {
     });
 
 
-    
+function addCateroryCost(weapon) {
+    if (weapon.category == "P") {
+        pistolsCost += weapon.cost;
+        pistolShots += 1;
+    } else {
+        carabinesCost += weapon.cost;
+        carabinesShots += 1;
+    }
+}
+
+
+function subtractCateroryCost(weapon) {
+    if (weapon.category == "P") {
+        pistolsCost -= weapon.cost;
+        pistolShots -= 1;
+    } else {
+        carabinesCost -= weapon.cost;
+        carabinesShots +=1;
+    }
+}
+
 
 function displayCurrentNumberAndCost(numberOfWeaponShots,allShotsCost,weaponName) {
     var word;
     var weaponShotsBoxID = weaponName + "ShotsNumber";
     var weaponCostBoxID = weaponName + "Cost";
 
-    if (numberOfWeaponShots === 1) {
-        word = " shot";
-    } else {
-        word = " shots";
-    }
+    if (numberOfWeaponShots === 1) {word = " shot";}
+    else {word = " shots";}
+
     document.getElementById(weaponShotsBoxID).innerHTML = numberOfWeaponShots + word;
     document.getElementById(weaponCostBoxID).innerHTML = allShotsCost + "$";
     document.getElementById("sum").innerHTML = "total: " + sum + " $";
+    document.getElementById("pistolsShots").innerHTML = pistolShots + " shots";
+    document.getElementById("pistolsCost").innerHTML = pistolsCost + " $";
+    document.getElementById("carabinesShots").innerHTML = carabinesShots + " shots";
+    document.getElementById("carabinesCost").innerHTML = carabinesCost + " $";
 }
 }
 
-
-function calculate() {
-    sum = 0;
-    ammoAmmount.forEach(weapon => {
-        sum += weapon.allShotsCost;
-    });
-    document.getElementById("sum").innerHTML = sum;
-}
 
 

@@ -95,8 +95,6 @@
 
     <section id="popup">
         
-
-
         <section id="popupNavbar" class="navbarHor">
                 <ul id="navbarHorCont" style="padding:0; margin:0;">
                     <li><p>Automatic weapons</p></li>
@@ -105,8 +103,6 @@
                     <button id="exitButton" onclick="hidePopup()">EXIT</button>
                 </ul>
         </section>
-
-
 
         <div class="switchable" id="people">
             <h1>Automatic weapons:</h1>
@@ -216,13 +212,7 @@
                     <td id="pkmCost">-</td>
                 </tr>
             </table>
-
-            <br>
-            <button onclick="calculate()">calculate</button>
-            <p id="sum"></p>
-
         </div>
-
 
         <div class="switchable" id="instructors">
             <h1>Pistols:</h1>
@@ -316,45 +306,29 @@
         <div class="box switchable" id="weapons">
             <table style="border:1px solid black">
                 <tr>
-                    <th>no.</th>
-                    <th>Weapon</th>
-                    <th>Ammunition</th>
+                    <th>Category</th>
+                    <th>Shots</th>
                     <th>Cost</th>
                 </tr>
                 <tr>
-                    <td>1.</td>
-                    <td>AK-47</td>
-                    <td>5.45mm</td>
-                    <td>5$</td>
-                    <td><button onclick="changeShotsNumber('ak47','add')">+</button></td>
-                    <td><button onclick="changeShotsNumber('ak47','subtract')">-</button></td>
-                    <td id="ak47ShotsNumber">-</td>
+                    <td>PISTOLS</td>
+                    <td id="pistolsShots"></td>
+                    <td id="pistolsCost" ></td>
                 </tr>
                 <tr>
-                    <td>2.</td>
-                    <td>Makarov</td>
-                    <td>7.62mm</td>
-                    <td>3$</td>
-                    <td><button onclick="changeShotsNumber('makarov','add')">+</button></td>
-                    <td><button onclick="changeShotsNumber('makarov','subtract')">-</button></td>
-                    <td id="makarovShotsNumber">-</td>
+                    <td>CARABINES</td>
+                    <td id="carabinesShots"></td>
+                    <td id="carabinesCost" ></td>
                 </tr>
                 <tr>
-                    <td>3.</td>
-                    <td>Beretta m92</td>
-                    <td>9mm</td>
-                    <td>2$</td>
-                    <td><button onclick="changeShotsNumber('beretta','add')">+</button></td>
-                    <td><button onclick="changeShotsNumber('beretta','subtract')">-</button></td>
-                    <td id="berettaShotsNumber">-</td>
+                    <td></td>
+                    <td></td>
+                    <td id="sum"></td>
                 </tr>
             </table>
-            <br><br><br><br><br><br><br><br><br><br>
-            <!-- <button onclick="calculate()">calculate</button>
-            <p id="sum"></p> -->
         </div>
 
-
+        <br><br><br>
         <button id="prevBtn" onclick="previousDiv()">BACK</button>
         <button id="nextBtn" onclick="nextDiv()">NEXT</button>
     </section>
