@@ -57,7 +57,7 @@ function displayCurrentNumberAndCost(numberOfWeaponShots,allShotsCost,weaponName
 function calculate() {
     sum = 0;
     ammoAmmount.forEach(weapon => {
-        sum += weapon.shots * weapon.cost;
+        sum += weapon.allShotsCost;
     });
     document.getElementById("sum").innerHTML = sum;
 }

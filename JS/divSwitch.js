@@ -1,5 +1,7 @@
 var switchableDivs = document.getElementsByClassName("switchable");
 var popupWindow = document.getElementById("popup");
+var nextButton = document.getElementById("nextBtn");
+var prevButton = document.getElementById("prevBtn");
 var currentIndex = 0;
 displayProperDiv();
 
@@ -12,7 +14,16 @@ function hidePopup() {
     popupWindow.style.visibility="hidden";
 }
 
+function setButtons(params) {
+    if (currentIndex == 0) {
+        prevButton.disabled = true;
+    } else {
+        prevButton.disabled = false;
+    }
+}
+
 function displayProperDiv() {
+    setButtons();
     for (let i = 0; i < switchableDivs.length; i++) {
         if (i === currentIndex){
             switchableDivs[i].style.display="block";

@@ -19,7 +19,7 @@
 
     <section id="navbarHor" class="navbarHor">
             <ul id="navbarHorCont">
-                <li> <a href=""> <p>HOME</p></li>
+                <li> <a href="home.html"> <p>HOME</p></li>
                 <li> <a href=""><p>About us</p></a></li>
                 <li> <a href=""><p>Our arsenal</p></a></li>
                 <li> <a href="planVisit.html"><p>Plan Your visit</p></a></li>
@@ -217,16 +217,14 @@
                     <td id="pkmCost">-</td>
                 </tr>
             </table>
-            <br><br><br><br><br><br><br><br><br><br>
+            <br>
             <button onclick="calculate()">calculate</button>
             <p id="sum"></p>
-            <button onclick="nextDiv()">NEXT</button>
         </div>
 
+
         <div class="box switchable" id="instructors">
-            <p> dsadfdfsdfsdfdsfsdffds INSTRUCTORS</p>
-            <button onclick="previousDiv()">BACK</button>
-            <button onclick="nextDiv()">NEXT</button>
+            <p> dsadfdfsdfsdfdsfsdffds INSTRUCTORS</p>      
         </div>
 
 
@@ -269,8 +267,11 @@
             <br><br><br><br><br><br><br><br><br><br>
             <button onclick="calculate()">calculate</button>
             <p id="sum"></p>
-            <button onclick="previousDiv()">BACK</button>
         </div>
+
+
+        <button id="prevBtn" onclick="previousDiv()">BACK</button>
+        <button id="nextBtn" onclick="nextDiv()">NEXT</button>
     </section>
 
 
