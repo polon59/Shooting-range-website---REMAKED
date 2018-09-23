@@ -17,7 +17,7 @@
     </section>
 
 
-    <section id="navbarHor">
+    <section id="navbarHor" class="navbarHor">
             <ul id="navbarHorCont">
                 <li> <a href=""> <p>HOME</p></li>
                 <li> <a href=""><p>About us</p></a></li>
@@ -35,7 +35,7 @@
         
         <ul>
             <li> <a href="#start"> <p>Start</p></li>
-            <li> <a href=""><p>About us</p></a></li>
+            <li> <a href="#cost"><p>Cost</p></a></li>
             <li> <a href=""><p>Why to choose us?</p></a></li>
             <li> <a href=""><p>Current events</p></a></li>
         </ul>
@@ -56,13 +56,11 @@
                 agencies and we organize events with firearms. We have a great experience with tourist groups and stag 
                 party groups. Our arsenal and our instructors are waiting for you.
             </p>
+            <button onclick="showPopup()">START</button>
         </div>
 
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-        <div class="box" id="start">
+        <div class="box" id="cost">
             <h3>Cost</h3>
             <p>
                 <br><br>
@@ -92,24 +90,24 @@
                 Shotgun - 3,00 pln <br>
             </p>
         </div>
-
-
-
-
-
-
-
-
-        <button onclick="showPopup()">START</button>
     </section>
 
 
-
-
-
-
     <section id="popup">
-        <button id="exitButton" onclick="hidePopup()">EXIT</button>
+        
+
+
+        <section id="popupNavbar" class="navbarHor">
+                <ul id="navbarHorCont" style="padding:0; margin:0;">
+                    <li><p>Accesories</p></li>
+                    <li><p>Automatic weapons</p></a></li>
+                    <li><p>Pistols</p></a></li>
+                    <li><p>Summary</p></a></li>
+                    <button id="exitButton" onclick="hidePopup()">EXIT</button>
+                </ul>
+        </section>
+
+
 
         <div class="switchable" id="people">
             <h1>Automatic weapons:</h1>
