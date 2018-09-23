@@ -1,6 +1,15 @@
 var switchableDivs = document.getElementsByClassName("switchable");
+var popupWindow = document.getElementById("popup");
 var currentIndex = 0;
 displayProperDiv();
+
+
+function showHidePopup() {
+    popupWindow.style.visibility="visible";
+    // } else {
+    //     popupWindow.style.display="hidden"
+    // }
+}
 
 function displayProperDiv() {
     for (let i = 0; i < switchableDivs.length; i++) {

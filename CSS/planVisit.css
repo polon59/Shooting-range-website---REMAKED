@@ -4,7 +4,7 @@ th{
 }
 
 tr{
-    color: white;
+    color: #bfb68e;
     text-align: center;
 }
 
@@ -18,12 +18,36 @@ table{
 }
 
 td button{
-    /* background-color: black; */
+    box-shadow: inset 0px 0px 12px 8px rgb(0, 0, 0);
+    border: none;
+    width: 4vw;
+    height: 3vw;
+    min-width: 30px;
+    min-height: 25px;
 }
 
 .switchable{
     margin: 4vw;
     /* text-align: center; */
+}
+
+#popup{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
 }
 
 .weaponImage{
